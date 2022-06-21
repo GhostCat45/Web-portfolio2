@@ -1,0 +1,321 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #194357;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #194357
+}
+.header{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin-top: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.container{
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+
+.header__item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu{
+    flex: 1 1 0;
+    list-style-type: none;
+    padding: 15px 25px 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all .2s linear;
+}
+
+.header__menu:hover{
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+/*------------------------------*/
+.logo{
+    width: 60px;
+    padding: 15px 20px 15px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: orangered;
+    text-align: center;
+    border-radius: 50%;
+    color: #ffefcc;
+}
+
+
+.inner{
+    margin-top: 10px;
+    width: 100%;
+    height: 80vh;
+    background: url(../images/main_bg_1.jpg) no-repeat center;
+}
+
+.inner__item{
+    height: 50vh;
+    display: table-cell;
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+    font-style: italic;
+    vertical-align: middle;
+}
+
+/*------------------------------*/
+
+.advertising__item{
+    display: flex;
+    justify-content: center;
+}
+
+/*-----------------------------*/
+.footer{
+    text-align: center;
+    width: 100%; 
+}
+
+.copyriting{
+    border-top: 2px solid #194357;
+}
+
+.copy__text{
+    padding: 20px 0 20px 0;
+    font-size: 16px;
+    color: #194357;
+    font-weight: 700;
+}
+/*-----------------------------*/
+
+.about{
+    padding-bottom: 50px;
+}
+
+.about__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    
+}
+
+.about__image{
+    width: 100px;
+    height: auto;
+    padding-right: 10px;
+}
+
+.section__name{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+
+.about__me{
+    display: flex;
+
+}
+
+.about__item{
+    width: 47%;
+    background-color: #feccf8;
+    margin: 20px 0 20px 0;
+    border-radius: 5px;
+    transition: all .2s linear;
+    
+}
+
+.about__item:first-child{
+    margin-left: 0;
+}
+
+.about__item:hover{
+    transform: translate(-5px, -5px);
+    box-shadow: 10px 10px rgb(123, 213, 240);
+}
+.about__title{
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    color: #093b46;
+}
+
+.about__info{
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 10px 10px 10px;
+    color: #093b46;
+}
+
+/*----------------------------*/
+.school{
+    background-color: #053452;
+    padding-bottom: 50px;
+}
+
+.sect__school{
+    color:#ed9723;
+}
+.school__inner{
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    border-top: 2px solid #ed9723;
+    border-bottom: 2px solid #ed9723;
+}
+.school__image{
+    text-align: center;
+}
+
+.school__info{
+    padding: 10px;
+    font-size: 18px;
+    /*font-style: italic;*/
+    font-weight: 700;
+    line-height: 1.5;
+    /*color: #BF6C7D;*/
+    color: #ed9723;
+}
+
+/*----------------------------*/
+.scientific{
+    padding-bottom: 50px;
+}
+
+.scientific__inner{
+    display: flex;
+    justify-content: center;
+}
+
+.scientific__info{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+
+/*-----------------------------*/
+.additional{
+    background-color: #053452;
+    font-size: 16px;
+    color: #ed9723;
+    margin-bottom: 10px;
+}
+
+
+.additional__item{
+    padding-bottom: 40px;
+    border-bottom: 2px solid #ed9723;
+}
+.additional__info{
+    line-height: 1.5;
+}
+
+.additional__title{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+}
+.info__title{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.info__text{
+    padding: 10px;
+    font-weight: 700;
+}
+
+.info__link{
+    color: #99e1d7;
+    font-weight: 700;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    transition: all .2s linear;
+    
+}
+
+.info__link:hover{
+    text-decoration: underline;
+}
+.additional__video{
+    display: flex;
+    justify-content: center;
+}
+
+/*-----------------------*/
+.maps__size{
+    width: 1450px;
+    height: 200px;
+}
+
+
+/*--------------------------------*/
+@media(max-width:1450px){
+    .container{
+        max-width: 1100px;
+    }
+    .header__menu{
+        font-size: 14px;
+        
+    }
+    .inner__item{
+        font-size: 50px;
+    }
+    .section__name{
+        font-size: 25px;
+    }
+    .about__title{
+        font-size: 18px;
+    }
+    .about__info{
+        font-size: 14px;
+    }
+    .school__info{
+        font-size: 14px;
+    }
+    .logo{
+        font-size: 14px;
+        width: 48px;
+        padding: 15px 15px 15px 15px;
+        
+    }
+    .additional__title{
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .info__title{
+        font-size: 18px;
+    }
+    .info__text{
+        font-size: 14px;
+    }
+    .maps__size{
+        width: 1100px;
+    }
+    .copy__text{
+        font-size: 14px;
+    }
+}
