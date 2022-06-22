@@ -219,6 +219,7 @@ body{
     font-size: 16px;
     color: #ed9723;
     margin-bottom: 10px;
+    padding-bottom: 50px;
 }
 
 
@@ -263,7 +264,33 @@ body{
     display: flex;
     justify-content: center;
 }
+/*----------------------*/
 
+.button__begin{
+    color: #ed9723;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #ffefcc;
+    border-radius: 5px;
+    transition: all .2s linear;
+    font-weight: 700;
+}
+.button__begin i{
+    color: #053452;
+}
+.button__begin:hover{
+    background-color: #ed9723;
+    color: #053452;
+}
+
+
+.additional__button{
+    padding: 50px 0 50px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
 /*-----------------------*/
 .maps__size{
     width: 1450px;
@@ -272,6 +299,8 @@ body{
 
 
 /*--------------------------------*/
+
+
 @media(max-width:1450px){
     .container{
         max-width: 1100px;

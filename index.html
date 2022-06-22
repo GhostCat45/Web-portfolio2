@@ -10,10 +10,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,700&display=swap" rel="stylesheet">
     <title>Portfolio</title>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+         document.getElementById("myBtn").style.display = "block";
+        } else {
+           document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0; 
+    }
+    </script>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="first">
         <div class="container">
             <div class="header__item">
                 <a href="#" class="logo">SB</a>
@@ -36,7 +51,7 @@
     <div class="advertising">
         <div class="container">
             <div class="advertising__item">
-                <a href="https://next.privat24.ua/charity" class="advertising__link" target="_blank"><img src="images/adv.png" alt=""></a>
+                <a href="https://next.privat24.ua/charity" class="advertising__link" target="_blank"><img src="images/adv1.jpg" alt=""></a>
             </div>
             
         </div>
@@ -155,7 +170,12 @@
                         Відео пояснення матеріалу
                     </div> 
                     <div class="additional__video"><iframe width="960" height="515" src="https://www.youtube.com/embed/yL2lFasxVvc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    
                 </div>
+                <div class="additional__item additional__button">
+                    <button onclick="topFunction()" id="myBtn" class="button__begin">&uarr;</button>
+                </div>
+                
             </div>
         </div>
     </section>
